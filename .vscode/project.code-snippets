@@ -1,0 +1,55 @@
+// Place your edp workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+// Placeholders with the same ids are connected.
+// Example:
+// "Print to console": {
+// 	"scope": "javascript,typescript",
+// 	"prefix": "log",
+// 	"body": [
+// 		"console.log('$1');",
+// 		"$2"
+// 	],
+// 	"description": "Log output to console"
+// }
+
+{
+ "dictionary": {
+		"prefix": "const dictionary",
+		"body": [
+			"const dictionary = {",
+			"  en: {",
+			"    $1"
+			"  },",
+			"  pt: {",
+			"    $2"
+			"  },",
+			"} satisfies Dictionary",
+			"$0"
+		],
+		"description": "Adds a dictionary for internacionalization purposes.",
+		"scope": "typescript,typescriptreact"
+	},
+	"translate": {
+		"prefix": "const t",
+		"body": [
+			"const t = useTranslate(dictionary)",
+			"$0"
+		],
+		"description": "Adds a useTranslate hook",
+		"scope": "typescriptreact"
+	},
+	"AsyncContent": {
+		"prefix": "<AsyncContent",
+		"body": [
+			"<AsyncContent loading={isLoading} error={error}>",
+			"  $1",
+			"</AsyncContent>",
+			"$0"
+		],
+		"description": "Adds an AsyncContent component",
+		"scope": "typescriptreact"
+	}
+}

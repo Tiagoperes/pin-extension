@@ -1,8 +1,8 @@
 {
-  "slug": "workflow-form",
+  "slug": "pin-generator",
   "displayName": {
-    "pt": "Formulário de Workflow",
-    "en": "Workflow Form"
+    "pt": "Gerador de pin",
+    "en": "Pin generator"
   },
   "url": "http://localhost:3001",
   "links": [
