@@ -1,0 +1,13 @@
+{
+  "slug": "workflow-form",
+  "displayName": {
+    "pt": "Formulário de Workflow",
+    "en": "Workflow Form"
+  },
+  "url": "http://localhost:3001",
+  "links": [
+    {
+      "type": "workflow"
+    }
+  ]
+}

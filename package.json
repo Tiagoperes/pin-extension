@@ -1,0 +1,58 @@
+{
+  "name": "edp-form-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build --mode production && pnpm zip-dist",
+    "start": "vite --port 3001",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "pnpm preview-extension && pnpm start",
+    "zip-dist": "cd dist && bestzip ../extension.zip * && cd ..",
+    "remove-preview": "pnpm remove-extension-preview"
+  },
+  "dependencies": {
+    "@stack-spot/citric-react": "^0.1.1",
+    "@stack-spot/citric-icons": "^0.1.1",
+    "@citric/core": "6.4.0",
+    "@citric/icons": "5.9.0",
+    "@citric/ui": "6.5.5",
+    "@stack-spot/portal-components": "2.24.1",
+    "@stack-spot/portal-extension": "0.16.0",
+    "@stack-spot/portal-theme": "1.1.0",
+    "@stack-spot/portal-translate": "1.2.2",
+    "@tanstack/react-query": "~5.59.15",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "6.1.10",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.4",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-gauge-chart": "^0.4.3",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@stack-spot/portal-network": "0.158.0",
+    "bestzip": "^2.2.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.12"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@9.2.0"
+}
